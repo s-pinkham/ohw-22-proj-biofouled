@@ -5,7 +5,11 @@ Develop a technique for identifity when instrument data have gone bad due to bio
 A challenge for deploying ocean instruments for extended periods of time or in productive environments is biofouling on sensors. This project would develop a technique(s) or method for identifying when data from different instruments when they have become biofouled.
 
 ## Personnel
-TBD
+* Thiago Caminha
+* Rieke Schäfer
+* Allen Smith
+* Sunny Pinkham
+* Andrew Reed
 
 ## Datasets and Infrastructure Supported
 This project would start with looking at Aanderaa oxygen optodes from moorings deployed and maintained by the Ocean Observatories Initiative. Much of the oxygen data has already been manually annotated for when it was biofouled by the operators, providing for a training dataset. Additionally, the datasets and manual annotation can be downloaded as netCDF files from https://dataexplorer.oceanobservatories.org/ or from the ERDDAP server at https://erddap.dataexplorer.oceanobservatories.org/erddap
