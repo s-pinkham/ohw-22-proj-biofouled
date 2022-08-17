@@ -58,13 +58,13 @@ xr.plot.scatter(ds, "time", "estimated_oxygen_concentration", hue = "LabelAndrew
 
 #calculate accuracy of labelling
 #exactly matching
-ds["correct"] = xr.where(ds.Andrew-ds.goodExpanded == 0, True, False)
+ds["correct"] = xr.where(ds.LabelAndrew-ds.goodExpanded == 0, True, False)
 ds.correct.mean()
 
 #my own is False, while other is True
-ds["falseNeg"] = xr.where(ds.Andrew-ds.goodExpanded == 1, True, False)
+ds["falseNeg"] = xr.where(ds.LabelAndrew-ds.goodExpanded == 1, True, False)
 ds.falseNeg.mean()
 
 #my own is True while other is False
-ds["falsePos"] = xr.where(ds.Andrew-ds.goodExpanded == -1, True, False)
+ds["falsePos"] = xr.where(ds.LabelAndrew-ds.goodExpanded == -1, True, False)
 ds.falsePos.mean()
